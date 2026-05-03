@@ -1,6 +1,6 @@
-# CV de Yann Houry
+# CV
 
-Ce dépôt contient le site CV de Yann Houry : une page statique, responsive et bilingue, développée en HTML, CSS et JavaScript vanilla.
+Ce dépôt contient un site CV : une page statique, responsive et bilingue, développée en HTML, CSS et JavaScript vanilla.
 
 Le site présente un profil professionnel, un parcours, des compétences, des publications, des interventions et des moyens de contact, avec plusieurs interactions légères pour améliorer la consultation.
 
