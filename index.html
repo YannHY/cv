@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CV de Yann Houry - Enseignant et Responsable de l'innovation pédagogique numérique à l'institut Florimont de Genève." />
+    <meta name="author" content="Yann Houry" />
+
+    <link rel="icon" href="Images/favicon.png" />
+    <link href="style.css" rel="stylesheet" id="theme-stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <title>Yann Houry | Responsable Innovation Pédagogique</title>
+  </head>
+  <body>
+    <!-- Navigation flottante -->
+    <nav class="navbar" aria-label="Navigation principale">
+      <div class="nav-container">
+        <a href="#hero" class="nav-logo">YH</a>
+        <ul class="nav-menu">
+          <li><a href="#about" class="nav-link" data-i18n="navProfile">Profil</a></li>
+          <li><a href="#experience" class="nav-link" data-i18n="navExperience">Parcours</a></li>
+          <li><a href="#skills" class="nav-link" data-i18n="navSkills">Compétences</a></li>
+          <li><a href="#publications" class="nav-link" data-i18n="navPublications">Publications</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="navContact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="btn-theme" aria-label="Basculer le thème" title="Changer de thème">
+            <ion-icon name="moon-outline" class="theme-icon"></ion-icon>
+          </button>
+          <div class="lang-switcher">
+            <button class="btn-lang-toggle" aria-label="Changer de langue" aria-expanded="false">
+              <ion-icon name="language-outline" class="lang-icon"></ion-icon>
+              <ion-icon name="chevron-down-outline" class="lang-chevron"></ion-icon>
+            </button>
+            <div class="lang-dropdown">
+              <button class="lang-option btn-fr active" data-lang="fr">
+                <span class="lang-flag">🇫🇷</span>
+                <span>Français</span>
+                <ion-icon name="checkmark-outline" class="lang-check"></ion-icon>
+              </button>
+              <button class="lang-option btn-en" data-lang="en">
+                <span class="lang-flag">🇬🇧</span>
+                <span>English</span>
+                <ion-icon name="checkmark-outline" class="lang-check"></ion-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+        <button class="nav-toggle" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="hero-background">
+        <div class="hero-gradient"></div>
+        <div class="hero-pattern"></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-image-wrapper">
+          <img src="Images/yann.png" alt="Yann Houry" class="hero-image" />
+          <div class="hero-image-ring"></div>
+        </div>
+        <div class="hero-text">
+          <p class="hero-greeting" data-i18n="heroGreeting">Bonjour, je suis</p>
+          <h1 class="hero-title" data-i18n="heroTitle">Yann Houry</h1>
+          <p class="hero-subtitle" data-i18n="heroSubtitle">Responsable de l'Innovation Pédagogique</p>
+          <p class="hero-location">
+            <ion-icon name="location-outline"></ion-icon>
+            <span data-i18n="heroLocation">Institut Florimont, Genève</span>
+          </p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary" data-i18n="heroCtaContact">Me contacter</a>
+            <a href="#about" class="btn btn-secondary" data-i18n="heroCtaMore">En savoir plus</a>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <ion-icon name="chevron-down-outline"></ion-icon>
+      </div>
+    </section>
+
+    <!-- Expertise Tags -->
+    <section class="expertise">
+      <div class="container">
+        <div class="expertise-grid">
+          <div class="expertise-card" data-modal="tech">
+            <div class="expertise-icon">
+              <ion-icon name="laptop-outline"></ion-icon>
+            </div>
+            <h3 data-i18n="expertiseTech">Technologie</h3>
+            <p data-i18n="expertiseTechDesc">IA & EdTech</p>
+          </div>
+          <div class="expertise-card" data-modal="teaching">
+            <div class="expertise-icon">
+              <ion-icon name="school-outline"></ion-icon>
+            </div>
+            <h3 data-i18n="expertiseTeaching">Enseignement</h3>
+            <p data-i18n="expertiseTeachingDesc">+20 ans d'expérience</p>
+          </div>
+          <div class="expertise-card" data-modal="pedagogy">
+            <div class="expertise-icon">
+              <ion-icon name="bulb-outline"></ion-icon>
+            </div>
+            <h3 data-i18n="expertisePedagogy">Pédagogie</h3>
+            <p data-i18n="expertisePedagogyDesc">Learning Design</p>
+          </div>
+          <div class="expertise-card" data-modal="innovation">
+            <div class="expertise-icon">
+              <ion-icon name="rocket-outline"></ion-icon>
+            </div>
+            <h3 data-i18n="expertiseInnovation">Innovation</h3>
+            <p data-i18n="expertiseInnovationDesc">Transformation digitale</p>
+          </div>
+          <div class="expertise-card" data-modal="publishing">
+            <div class="expertise-icon">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 data-i18n="expertisePublishing">Publication</h3>
+            <p data-i18n="expertisePublishingDesc">Manuels & essais</p>
+          </div>
+          <div class="expertise-card" data-modal="podcast">
+            <div class="expertise-icon">
+              <ion-icon name="mic-outline"></ion-icon>
+            </div>
+            <h3 data-i18n="expertisePodcast">Podcasts</h3>
+            <p data-i18n="expertisePodcastDesc">Réflexions sur la lecture</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overlay pour les modales -->
+    <div class="modal-overlay hidden" aria-hidden="true"></div>
+
+    <!-- Modal Technologie -->
+    <div id="modal-tech" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-tech-title">
+      <button class="modal-close" aria-label="Fermer">&times;</button>
+      <div class="modal-icon">
+        <ion-icon name="laptop-outline"></ion-icon>
+      </div>
+      <h2 id="modal-tech-title" class="modal-title" data-i18n="modalTechTitle">Technologie</h2>
+      <p class="modal-text" data-i18n="modalTechText">La technologie est, comme le disait Steve Jobs, un vélo pour l'esprit. Elle bouleverse le système éducatif. C'est encore plus vrai de l'intelligence artificielle.</p>
+      <a href="https://github.com/YannHY/cours/blob/master/Un%20Centaure%20à%20l'école/Un%20Centaure%20à%20l'école%20TOC.md" class="modal-link" data-i18n="modalTechLink">Lire mon essai <em>Un Centaure à l'école</em></a>
+    </div>
+
+    <!-- Modal Enseignement -->
+    <div id="modal-teaching" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-teaching-title">
+      <button class="modal-close" aria-label="Fermer">&times;</button>
+      <div class="modal-icon">
+        <ion-icon name="school-outline"></ion-icon>
+      </div>
+      <h2 id="modal-teaching-title" class="modal-title" data-i18n="modalTeachingTitle">Enseignement</h2>
+      <p class="modal-text" data-i18n="modalTeachingText">J'enseigne depuis plus de vingt ans à tout type de public en tout lieu (France, Nouvelle-Calédonie, Royaume-Uni, Hong Kong, Suisse...).</p>
+      <a href="https://www.ralentirtravaux.com/" class="modal-link" data-i18n="modalTeachingLink">Voyez tous les cours que j'ai mis en ligne</a>
+    </div>
+
+    <!-- Modal Pédagogie -->
+    <div id="modal-pedagogy" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-pedagogy-title">
+      <button class="modal-close" aria-label="Fermer">&times;</button>
+      <div class="modal-icon">
+        <ion-icon name="bulb-outline"></ion-icon>
+      </div>
+      <h2 id="modal-pedagogy-title" class="modal-title" data-i18n="modalPedagogyTitle">Pédagogie</h2>
+      <p class="modal-text" data-i18n="modalPedagogyText">L'enseignement ne consiste pas uniquement à penser au contenu, mais aussi à la manière dont l'élève va se l'approprier.</p>
+      <a href="https://publish.obsidian.md/yannhoury/Documentation/Introduction+to+Learning+Design/1.+Introduction+to+Learning+Design" class="modal-link" data-i18n="modalPedagogyLink">Comprendre comment le « learning design » change l'enseignement</a>
+    </div>
+
+    <!-- Modal Innovation -->
+    <div id="modal-innovation" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-innovation-title">
+      <button class="modal-close" aria-label="Fermer">&times;</button>
+      <div class="modal-icon">
+        <ion-icon name="rocket-outline"></ion-icon>
+      </div>
+      <h2 id="modal-innovation-title" class="modal-title" data-i18n="modalInnovationTitle">Innovation</h2>
+      <p class="modal-text" data-i18n="modalInnovationText">Le monde change et l'enseignement avec lui. C'est pourquoi il est crucial de lire ce que dit la recherche, de lire et apprendre le plus possible.</p>
+      <a href="https://docs.google.com/presentation/d/14UFI8-stYRXvEJq2axW-RHyLyAvNiRX77Am3NivaVIc/edit?usp=sharing" class="modal-link" data-i18n="modalInnovationLink">Voir une présentation sur ce que signifie enseigner aujourd'hui</a>
+    </div>
+
+    <!-- Modal Publication -->
+    <div id="modal-publishing" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-publishing-title">
+      <button class="modal-close" aria-label="Fermer">&times;</button>
+      <div class="modal-icon">
+        <ion-icon name="book-outline"></ion-icon>
+      </div>
+      <h2 id="modal-publishing-title" class="modal-title" data-i18n="modalPublishingTitle">Publication</h2>
+      <p class="modal-text" data-i18n="modalPublishingText">Les technologies web permettent aux enseignants de communiquer avec leurs homologues de par le monde dans cette salle des professeurs mondiale qu'est le web, et de partager ses productions.</p>
+      <a href="https://www.ralentirtravaux.com/manuels.php" class="modal-link" data-i18n="modalPublishingLink">Voir tous les manuels et livres que j'ai publiés</a>
+    </div>
+
+    <!-- Modal Podcasts -->
+    <div id="modal-podcast" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-podcast-title">
+      <button class="modal-close" aria-label="Fermer">&times;</button>
+      <div class="modal-icon">
+        <ion-icon name="mic-outline"></ion-icon>
+      </div>
+      <h2 id="modal-podcast-title" class="modal-title" data-i18n="modalPodcastTitle">Podcasts</h2>
+      <p class="modal-text" data-i18n="modalPodcastText">Des conversations et réflexions sur la lecture quand elle se pratique sur un écran. Quels changements&nbsp;? Quels avantages&nbsp;?</p>
+      <a href="https://www.ralentirtravaux.com/le_blog/podcasts/" class="modal-link" data-i18n="modalPodcastLink">Écouter les podcasts</a>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="aboutTag">À propos</span>
+          <h2 class="section-title" data-i18n="aboutTitle">Profil</h2>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <p class="about-lead" data-i18n="aboutLead">
+              Enseignant passionné par les questions liées à l'éducation, à la pédagogie et au développement du numérique.
+            </p>
+            <p data-i18n="aboutText1">
+              Actuellement responsable de l'innovation à l'institut Florimont de Genève, je suis également auteur du site web
+              <a href="https://www.ralentirtravaux.com" class="link">Ralentir travaux</a>, de manuels numériques et d'un essai
+              intitulé <em>Un Centaure à l'école</em>.
+            </p>
+            <p data-i18n="aboutText2">
+              Mon parcours m'a amené à enseigner et former dans de nombreux pays : France, Nouvelle-Calédonie, Royaume-Uni,
+              Hong Kong et Suisse.
+            </p>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-number" data-target="20" data-suffix="+">0+</span>
+              <span class="stat-label" data-i18n="statYears">Années d'enseignement</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-target="80" data-suffix="+">0+</span>
+              <span class="stat-label" data-i18n="statTrainings">Formations dispensées</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-target="8">0</span>
+              <span class="stat-label" data-i18n="statBooks">Livres publiés</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-target="5">0</span>
+              <span class="stat-label" data-i18n="statCountries">Pays</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="experienceTag">Parcours</span>
+          <h2 class="section-title" data-i18n="experienceTitle">Expérience Professionnelle</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date" data-i18n="exp1Date">2024 - Présent</span>
+              <h3 data-i18n="exp1Title">Responsable de l'Innovation Pédagogique Numérique</h3>
+              <p class="timeline-company">
+                <a href="https://www.florimont.ch/" class="link" data-i18n="exp1Company">Institut Florimont</a>, <span data-i18n="exp1Location">Genève</span>
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date" data-i18n="exp2Date">2022 - 2024</span>
+              <h3 data-i18n="exp2Title">Directeur de l'Innovation Pédagogique & Technologique</h3>
+              <p class="timeline-company">
+                <a href="https://www.fis.edu.hk/?lang=fr" class="link" data-i18n="exp2Company">Lycée Français International</a>, <span data-i18n="exp2Location">Hong Kong</span>
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date" data-i18n="exp3Date">2020 - 2022</span>
+              <h3 data-i18n="exp3Title">Directeur de l'Innovation et de la Recherche Académique</h3>
+              <p class="timeline-company">
+                <a href="https://www.lyceeinternational.london/" class="link" data-i18n="exp3Company">Lycée Winston-Churchill</a>, <span data-i18n="exp3Location">Londres</span>
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date" data-i18n="exp4Date">2017 - 2022</span>
+              <h3 data-i18n="exp4Title">Professeur de Lettres</h3>
+              <p class="timeline-company" data-i18n="exp4Company">Lycée Winston-Churchill, Londres</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date" data-i18n="exp5Date">2015 - 2017</span>
+              <h3 data-i18n="exp5Title">Professeur et Référent Numérique</h3>
+              <p class="timeline-company" data-i18n="exp5Company">Collège de Labrit, France</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date" data-i18n="exp6Date">2006 - 2015</span>
+              <h3 data-i18n="exp6Title">Professeur de Lettres Modernes</h3>
+              <p class="timeline-company" data-i18n="exp6Company">Collège Gaston Bachelard, Bar-sur-Aube</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Certifications -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="skillsTag">Compétences</span>
+          <h2 class="section-title" data-i18n="skillsTitle">Certifications & Formation</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3 data-i18n="skillCatAcademic">Formation Académique</h3>
+            <ul class="skill-list">
+              <li>
+                <span class="skill-name" data-i18n="skillMaitrise">Maîtrise de Lettres Modernes</span>
+                <span class="skill-meta" data-i18n="skillMaitriseYear">1995</span>
+              </li>
+              <li>
+                <span class="skill-name" data-i18n="skillCapes">CAPES de Lettres Modernes</span>
+                <span class="skill-meta" data-i18n="skillCapesYear">1998</span>
+              </li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3 data-i18n="skillCatApple">Certifications Apple</h3>
+            <ul class="skill-list">
+              <li>
+                <span class="skill-name" data-i18n="skillAppleTrainer">Apple Education Trainers</span>
+                <span class="skill-meta" data-i18n="skillAppleTrainerYear">2013</span>
+              </li>
+              <li>
+                <a href="https://drive.google.com/file/d/1sRt07ow6mG-F89b2UOI566SGbe0jyZwf/view?usp=share_link" class="skill-name link" data-i18n="skillAppleTeacher">Apple Teacher</a>
+                <span class="skill-meta" data-i18n="skillAppleTeacherYear">2021</span>
+              </li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3 data-i18n="skillCatGoogle">Certifications Google</h3>
+            <ul class="skill-list">
+              <li>
+                <a href="https://www.credential.net/cde83b4f-0070-4cdc-b666-15c507db2ba1?key=331cf2e1fcdaf86f1af9233bb2018461186c7d7c58b222ea58bf2546062b6544" class="skill-name link" data-i18n="skillGoogle1">Google Certified Educator Level 1</a>
+                <span class="skill-meta" data-i18n="skillGoogle1Year">2023</span>
+              </li>
+              <li>
+                <a href="https://www.credential.net/ddb71886-e995-4f77-9119-f866a853c844?key=2acb949bbd7b90ae323650ee37b32dbdc8b36da4345859d23d5d1920b7904cbf" class="skill-name link" data-i18n="skillGoogle2">Google Certified Educator Level 2</a>
+                <span class="skill-meta" data-i18n="skillGoogle2Year">2023</span>
+              </li>
+              <li>
+                <a href="https://drive.google.com/file/d/1kTrP_ODxa2_iLO26U_UzwTO79nAe9xUN/view?usp=sharing" class="skill-name link" data-i18n="skillGoogleTrainer">Google for Education Certified Trainer</a>
+                <span class="skill-meta" data-i18n="skillGoogleTrainerYear">2023</span>
+              </li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3 data-i18n="skillCatOther">Autres Certifications</h3>
+            <ul class="skill-list">
+              <li>
+                <a href="https://drive.google.com/file/d/1BS0sdYECKju79CDCyFLWtb7EIcERPjw2/view?usp=share_link" class="skill-name link" data-i18n="skillCommonSense">Common Sense Educator</a>
+                <span class="skill-meta" data-i18n="skillCommonSenseYear">2022</span>
+              </li>
+              <li>
+                <a href="https://drive.google.com/file/d/1Js2kT7aB0HXOnp1yy4J4EmJ6_T50h8_l/view?usp=share_link" class="skill-name link" data-i18n="skillHtmlCss">HTML and CSS (Udemy)</a>
+                <span class="skill-meta" data-i18n="skillHtmlCssYear">2021</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Conferences -->
+    <section class="conferences">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="conferencesTag">Interventions</span>
+          <h2 class="section-title" data-i18n="conferencesTitle">Conférences & Médias</h2>
+        </div>
+        <div class="conferences-grid">
+          <a href="https://youtu.be/XPQ2mA2g1l0?si=12GSuHWnleTeMaDp" class="conference-card">
+            <span class="conference-date">Déc. 2025</span>
+            <h4>Tout se transforme</h4>
+            <p>Barak@TIC2025</p>
+          </a>
+          <a href="https://numerique.umontpellier.fr/evenement/atelier-expert-iag-competences-apprentissages/" class="conference-card">
+            <span class="conference-date">Nov. 2025</span>
+            <h4>IA génératives et apprentissages</h4>
+            <p>Université de Montpellier</p>
+          </a>
+          <a href="https://www.icp.fr/a-propos-de-licp/agenda/lia-dans-leducation-entre-promesses-et-defis" class="conference-card">
+            <span class="conference-date">Déc. 2024</span>
+            <h4>L'IA dans l'éducation</h4>
+            <p>Institut Catholique de Paris</p>
+          </a>
+          <a href="https://youtu.be/i2-WJ9HZciA?si=Z377FWWT5NC6JEiW" class="conference-card">
+            <span class="conference-date">Fév. 2024</span>
+            <h4>Que signifie être lecteur aujourd'hui&nbsp;?</h4>
+            <p>INSPE Polynésie française</p>
+          </a>
+          <a href="https://youtu.be/tHLlKpuU7Jc?si=6qTWkZJ0eb1yjyq9" class="conference-card">
+            <span class="conference-date">Août 2023</span>
+            <h4>À l'école de l'IA</h4>
+            <p>Réseau Canopé</p>
+          </a>
+          <a href="https://docs.google.com/presentation/d/1edhjQlVj7ZEelpSE_zEn1iDGs2cNNkFUKnkeb3HJtJE/edit?usp=sharing" class="conference-card">
+            <span class="conference-date">Mars 2023</span>
+            <h4>Promenons-nous dans les bois de l'IA</h4>
+            <p>Mission Laïque Française</p>
+          </a>
+        </div>
+        <!-- Conférences supplémentaires (cachées par défaut) -->
+        <div class="conferences-grid conferences-hidden">
+          <a href="https://fapee.org/45-ans-de-mobilisation-pour-lenseignement-francais-a-letranger/" class="conference-card">
+            <span class="conference-date">Juil. 2025</span>
+            <h4>Numérique, écrans, intelligences artificielles…</h4>
+            <p>FAPEE</p>
+          </a>
+          <a href="https://www.sne.fr/evenement_sne/webinaire-les-mardis-de-lia-3/" class="conference-card">
+            <span class="conference-date">Avril 2024</span>
+            <h4>Les Mardis de l'IA #3</h4>
+            <p>Syndicat National de l'Édition</p>
+          </a>
+          <a href="https://www.afhongkong.org/en/exams/teacher-training/" class="conference-card">
+            <span class="conference-date">Nov. 2023</span>
+            <h4>FLE et Intelligence artificielle</h4>
+            <p>Alliance Française Hong Kong</p>
+          </a>
+          <a href="https://podcasts.apple.com/fr/podcast/39-yann-houry-directeur-la-recherche-acad%C3%A9mique-et/id1471116248?i=1000512537878" class="conference-card">
+            <span class="conference-date">Mars 2021</span>
+            <h4>Podcast EdTech France</h4>
+            <p>EdTech France</p>
+          </a>
+          <a href="https://youtu.be/fpG2AjvddAk" class="conference-card">
+            <span class="conference-date">Janv. 2017</span>
+            <h4>Eidos 64</h4>
+            <p>Forum des pratiques numériques</p>
+          </a>
+          <a href="https://yann-houry.netlify.app/video.ens-lyon.fr/ife/2017/2017-01-10-EMI-CONF-Table-ronde-4.hd.mp4" class="conference-card">
+            <span class="conference-date">Janv. 2017</span>
+            <h4>Cultures numériques</h4>
+            <p>ENS de Lyon</p>
+          </a>
+          <a href="https://www.educavox.fr/accueil/interviews/yann-houry-enseignant-auteur-editeur" class="conference-card">
+            <span class="conference-date">Nov. 2016</span>
+            <h4>20 ans de l'An@é</h4>
+            <p>Educavox</p>
+          </a>
+          <a href="https://www.dailymotion.com/video/x25cn3i" class="conference-card">
+            <span class="conference-date">2014</span>
+            <h4>Journal 19/20</h4>
+            <p>France 3</p>
+          </a>
+          <a href="https://www.canal-u.tv/video/eduscol/l_image_numerique_vaut_elle_un_beau_discours_partie_2.37937" class="conference-card">
+            <span class="conference-date">Nov. 2013</span>
+            <h4>L'image numérique vaut-elle un beau discours&nbsp;?</h4>
+            <p>PNF Paris</p>
+          </a>
+        </div>
+        <div class="conferences-more">
+          <button class="btn btn-outline btn-conferences-toggle" data-i18n="confMoreBtn">Voir toutes les interventions</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications" class="publications">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="publicationsTag">Écrits</span>
+          <h2 class="section-title" data-i18n="publicationsTitle">Publications récentes</h2>
+        </div>
+        <div class="publications-grid">
+          <div class="publication-card featured">
+            <div class="publication-cover">
+              <img src="Images/couverture.jpg" alt="Itinéraire d'un lecteur gâté">
+            </div>
+            <div class="publication-info">
+              <h4 data-i18n="pubItineraire">Itinéraire d'un lecteur gâté</h4>
+              <p class="publication-year" data-i18n="pubItineraireYear">2024</p>
+              <p class="publication-desc" data-i18n="pubItineraireDesc">On dit que le papier présente un avantage irréfragable par rapport aux écrans, qu'avec le papier, la concentration est meilleure, qu'on retient mieux. Mon expérience de lecteur va à l'encontre de tout cela.</p>
+            </div>
+          </div>
+          <div class="publication-card">
+            <div class="publication-cover">
+              <img src="Images/centaure.jpg" alt="Un Centaure à l'école">
+            </div>
+            <div class="publication-info">
+              <h4 data-i18n="pubCentaure">Un Centaure à l'école</h4>
+              <p class="publication-year" data-i18n="pubCentaureYear">2016</p>
+              <p class="publication-desc" data-i18n="pubCentaureDesc">Essai sur l'intégration du numérique dans l'éducation</p>
+            </div>
+          </div>
+          <div class="publication-card">
+            <div class="publication-cover">
+              <img src="Images/manuel-grammaire.jpg" alt="Manuel de grammaire">
+            </div>
+            <div class="publication-info">
+              <h4 data-i18n="pubGrammaire">Manuel de grammaire</h4>
+              <p class="publication-year" data-i18n="pubGrammaireYear">2015</p>
+              <p class="publication-desc" data-i18n="pubGrammaireDesc">Leçons détaillées suivies d'exercices et évaluations.</p>
+            </div>
+          </div>
+          <div class="publication-card">
+            <div class="publication-cover">
+              <img src="Images/manuel-litterature.jpg" alt="Manuel de littérature">
+            </div>
+            <div class="publication-info">
+              <h4 data-i18n="pubLitterature">Manuel de littérature</h4>
+              <p class="publication-year" data-i18n="pubLitteratureYear">2015</p>
+              <p class="publication-desc" data-i18n="pubLitteratureDesc">Les fables, la Bible, L'Iliade et L'Odyssée...</p>
+            </div>
+          </div>
+          <div class="publication-card">
+            <div class="publication-cover">
+              <img src="Images/24-dictees.PNG" alt="24 dictées">
+            </div>
+            <div class="publication-info">
+              <h4 data-i18n="pubDictees">24 dictées</h4>
+              <p class="publication-year" data-i18n="pubDicteesYear">2018</p>
+              <p class="publication-desc" data-i18n="pubDicteesDesc">Dictées différenciées enregistrées</p>
+            </div>
+          </div>
+        </div>
+        <p class="publications-note">
+          <span data-i18n="pubNote">Disponibles sur</span>
+          <a href="https://www.amazon.fr/Boutique-Kindle-Yann-Houry/s?rh=n%3A672108031%2Cp_27%3AYann%2BHoury" class="link">Amazon</a>,
+          <a href="https://www.kobo.com/fr/fr/search?query=yann+houry" class="link">Kobo</a>,
+          <a href="https://books.apple.com/fr/author/yann-houry/id557582976" class="link">Apple Books</a> et
+          <a href="https://play.google.com/store/books/collection/cluster?gsr=SheCARQKEAoMU3ozVEJnQUFRQkFKEAkQBA%3D%3D:S:ANO1ljJ4cyI&hl=fr" class="link">Google Play</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <div class="section-header">
+              <span class="section-tag" data-i18n="contactTag">Contact</span>
+              <h2 class="section-title" data-i18n="contactTitle">Travaillons ensemble</h2>
+            </div>
+            <p class="contact-text" data-i18n="contactText">
+              Vous souhaitez organiser une formation, une conférence, ou simplement échanger sur l'innovation pédagogique&nbsp;?
+            </p>
+            <div class="contact-details">
+              <a href="mailto:yhoury@florimont.ch" class="contact-item">
+                <ion-icon name="mail-outline"></ion-icon>
+                <span>yhoury@florimont.ch</span>
+              </a>
+              <a href="tel:+41228790092" class="contact-item">
+                <ion-icon name="call-outline"></ion-icon>
+                <span>+41 22 879 00 92</span>
+              </a>
+              <div class="contact-item">
+                <ion-icon name="location-outline"></ion-icon>
+                <span data-i18n="contactAddress">Institut Florimont, Genève, Suisse</span>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/yann-houry-a2350651/" class="social-link" aria-label="LinkedIn">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+              <a href="https://bsky.app/profile/yannh.bsky.social" class="social-link" aria-label="Bluesky">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8Z"/></svg>
+              </a>
+              <a href="https://www.youtube.com/c/YannHoury" class="social-link" aria-label="YouTube">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+              <a href="https://yannhoury-10079.medium.com" class="social-link" aria-label="Medium">
+                <ion-icon name="logo-medium"></ion-icon>
+              </a>
+            </div>
+          </div>
+          <form class="contact-form" name="contact" netlify>
+            <div class="form-group">
+              <label for="name" data-i18n="formName">Nom</label>
+              <input type="text" id="name" name="name" required data-i18n-placeholder="formName" />
+            </div>
+            <div class="form-group">
+              <label for="email" data-i18n="formEmail">Email</label>
+              <input type="email" id="email" name="email" required data-i18n-placeholder="formEmail" />
+            </div>
+            <div class="form-group">
+              <label for="subject" data-i18n="formSubject">Objet</label>
+              <input type="text" id="subject" name="subject" required data-i18n-placeholder="formSubject" />
+            </div>
+            <div class="form-group">
+              <label for="message" data-i18n="formMessage">Message</label>
+              <textarea id="message" name="message" rows="5" required data-i18n-placeholder="formMessage"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" data-i18n="formSend">Envoyer</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2025 Yann Houry. <span data-i18n="footerRights">Tous droits réservés.</span></p>
+          <p class="footer-site">
+            <a href="https://www.ralentirtravaux.com" class="link">ralentirtravaux.com</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="i18n.js"></script>
+  </body>
+</html>
